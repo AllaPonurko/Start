@@ -6,11 +6,7 @@ public class ArrayModel implements Runnable{
     @Override
     public void run() {
         try{
-            for(int i=0;i<k;i++) {
-                arr[i]= (int) ((int)-36+ Math.random()*100);
-                System.out.print(arr[i]+";");
-            }
-            System.out.print("\n");
+            seedArr();
             MaxNum();
             MinNum();
             CountOfPositiveNegativeNum();
@@ -19,6 +15,14 @@ public class ArrayModel implements Runnable{
         catch (ArrayIndexOutOfBoundsException  ex) {
             System.out.println(ex.getMessage());
         }
+    }
+    public void seedArr()
+    {
+        for(int i=0;i<k;i++) {
+            arr[i]= (int) ((int)-36+ Math.random()*100);
+            System.out.print(arr[i]+";");
+        }
+        System.out.print("\n");
     }
 public void MaxNum()
 {int max=arr[0];
