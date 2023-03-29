@@ -1,3 +1,5 @@
+package Models;
+
 public class Person {
     public String Name;
     private int Age;

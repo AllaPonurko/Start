@@ -1,3 +1,5 @@
+package Models;
+
 import java.lang.reflect.Array;
 
 public class ArrayModel implements Runnable{

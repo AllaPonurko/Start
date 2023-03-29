@@ -1,3 +1,5 @@
+package Models;
+
 import java.util.Scanner;
 
 public class MultiplicationTable implements Runnable {
