@@ -1,8 +1,9 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
-ArrayModel arrayModel=new ArrayModel();
-
-arrayModel.run();
+//ArrayModel arrayModel=new ArrayModel();
+//arrayModel.run();
+        MultiplicationTable m=new MultiplicationTable();
+        m.run();
     }
 }
