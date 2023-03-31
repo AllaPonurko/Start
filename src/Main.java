@@ -1,7 +1,4 @@
-import Models.ArrayModel;
-import Models.AutoBuilder;
-import Models.MultiplicationTable;
-import Models.Seasons;
+import Models.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,7 +9,9 @@ public class Main {
 //      m.run();
 //        Seasons s=new Seasons();
 //        s.run();
-        AutoBuilder autoBuilder=new AutoBuilder();
-        autoBuilder.run();
+//        AutoBuilder autoBuilder=new AutoBuilder();
+//        autoBuilder.run();
+        LoadAvatar avatar=new LoadAvatar();
+        avatar.run();
     }
 }
