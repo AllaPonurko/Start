@@ -11,7 +11,9 @@ public class Main {
 //        s.run();
 //        AutoBuilder autoBuilder=new AutoBuilder();
 //        autoBuilder.run();
-        LoadAvatar avatar=new LoadAvatar();
-        avatar.run();
+//        LoadAvatar avatar=new LoadAvatar();
+//        avatar.run();
+        WorkHuman workHuman=new WorkHuman();
+        workHuman.run();
     }
 }
