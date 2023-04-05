@@ -2,6 +2,6 @@ package Interfaces;
 
 import Models.Human;
 
-public interface DeleteRepository {
-    void deleteHuman(Human human);
+public interface DeleteRepository <IEntity>{
+    void deleteHuman(Interfaces.IEntity human);
 }

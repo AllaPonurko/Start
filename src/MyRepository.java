@@ -10,19 +10,19 @@ public class MyRepository extends Humans
 {
 
     @Override
-    public void AddHuman(Human human) {
+    public void AddHuman(IEntity human) {
         Employees.add(human);
     }
 
     @Override
-    public void deleteHuman(Human human) {
+    public void deleteHuman(IEntity human) {
        Employees.remove(human);
     }
 
     @Override
     public void readHumanById(UUID id) {
 //       try {
-//           System.out.println(Employees.stream().filter(h->h.getId()==id).findFirst().toString());
+//           System.out.println(Employees.stream().filter(h->h.equals(h).getId()==id).findFirst().toString());
 //
 //       }catch (Exception e)
 //       {
