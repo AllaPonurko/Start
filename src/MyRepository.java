@@ -9,8 +9,6 @@ public class MyRepository extends Humans
         implements ICrudRepository
 {
 
-
-
     @Override
     public void AddHuman(Human human) {
         Employees.add(human);
@@ -24,22 +22,25 @@ public class MyRepository extends Humans
     @Override
     public void readHumanById(UUID id) {
 //       try {
-//           for (var human : Employees) {
-//               if(human.getId()==id)
-//               System.out.println(human.toString());
+//           System.out.println(Employees.stream().filter(h->h.getId()==id).findFirst().toString());
 //
-//           }
 //       }catch (Exception e)
 //       {
-//            System.out.println(e.getMessage());
+//            System.out.println(e.getMessage()+"Not found");
 //        }
+
     }
 
     @Override
     public void readAll() {
-        for (var human:Employees
-             ) {
-            System.out.println(human.toString());
+        try {
+            for (var human : Employees
+            ) {
+                System.out.println(human.toString());
+            }
+        }catch (Exception e)
+        {
+            System.out.println(e.getMessage());
         }
     }
 

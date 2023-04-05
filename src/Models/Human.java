@@ -1,8 +1,10 @@
 package Models;
 
+import Interfaces.IEntity;
+
 import java.util.UUID;
 
-public abstract class Human {
+public abstract class Human implements IEntity {
     private UUID Id;
     private String Name;
     private int Age;
@@ -36,6 +38,7 @@ public abstract class Human {
    {
      return  Experience;
    }
+   @Override
     public UUID getId() {
         return Id;
     }

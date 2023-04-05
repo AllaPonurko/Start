@@ -15,5 +15,6 @@ public class Main {
 //        avatar.run();
         WorkHuman workHuman=new WorkHuman();
         workHuman.run();
+
     }
 }

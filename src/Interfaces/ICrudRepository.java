@@ -7,6 +7,4 @@ import java.util.UUID;
 public interface ICrudRepository extends CreateRepository, DeleteRepository,
         ReadRepository, UpdateRepository {
 
-
-
 }
