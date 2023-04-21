@@ -1,25 +1,20 @@
 import Threads.PiCalculationThread;
 
-import java.util.concurrent.Semaphore;
+import java.util.concurrent.Exchanger;
+
 
 public class Work_PiCalculation implements Runnable{
     @Override
     public void run() {
         doCalculationPi();
     }
+    Exchanger<Double>exchanger=new Exchanger<>();
     public void doCalculationPi() {
-        double n = 2;
-        double pi = 1;
-        Semaphore semaphore = new Semaphore(2);
+
         try {
-            for (int i = 0; i < 200; i++) {
-                PiCalculationThread t = new PiCalculationThread(semaphore, n);
+                PiCalculationThread t = new PiCalculationThread( 2,400);
                 Thread th = new Thread(t);
                 th.start();
-                pi *= t.calculation(n);
-                n += 2;
-            }
-            System.out.println("Pi=" + pi * 2);
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
