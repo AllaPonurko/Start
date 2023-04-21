@@ -13,8 +13,9 @@ public class Main {
 //        autoBuilder.run();
 //        LoadAvatar avatar=new LoadAvatar();
 //        avatar.run();
-        WorkHuman workHuman=new WorkHuman();
-        workHuman.run();
-
+//        WorkHuman workHuman=new WorkHuman();
+//        workHuman.run();
+        Work_PiCalculation wp=new Work_PiCalculation();
+        wp.run();
     }
 }
